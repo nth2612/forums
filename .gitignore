@@ -53,3 +53,5 @@ tsconfig.tsbuildinfo
 __shad
 *storybook.log
 storybook-static
+
+.env
