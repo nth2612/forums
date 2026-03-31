@@ -1,11 +1,10 @@
-import { dir } from 'i18next'
 import { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import React from 'react'
 // Import global styles
 import { clientEnvironment } from 'src/environments/client'
 
-import '../globals.css'
+import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {

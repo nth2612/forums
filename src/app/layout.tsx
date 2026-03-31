@@ -9,7 +9,6 @@ import './globals.css'
 import { ChildrenProps } from 'src/types/common'
 import { NextAuthProvider } from 'src/providers/NextAuthProvider'
 
-
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -17,9 +16,7 @@ export const metadata: Metadata = {
   title: 'Create Next App',
 }
 
-export default async function RootLayout({
-  children,
-}: ChildrenProps) {
+export default async function RootLayout({ children }: ChildrenProps) {
   return (
     <html>
       <body

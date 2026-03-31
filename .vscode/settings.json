@@ -1,0 +1,38 @@
+{
+  // Bật format on save
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "biomejs.biome",
+
+  // Cấu hình riêng cho các file code (JS, TS, React)
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+
+  // Quan trọng: Kích hoạt ESLint tự động fix khi save (sau khi Biome format)
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never",
+    "source.fixAll.biome": "explicit"
+  },
+
+  // Bật Biome
+  "biome.enabled": true,
+
+  // Tắt các formatter khác để tránh xung đột
+  "eslint.format.enable": false
+}
