@@ -4,7 +4,6 @@ import { Inter } from 'next/font/google'
 import React from 'react'
 // Import global styles
 import { clientEnvironment } from 'src/environments/client'
-import { I18nProviderClient } from 'src/providers/I18nProvider'
 
 import '../globals.css'
 const inter = Inter({ subsets: ['latin'] })
@@ -28,7 +27,7 @@ export default async function LocaleLayout({
         className={inter.className}
         suppressHydrationWarning={clientEnvironment.suppressHydrationWarning}
       >
-        <I18nProviderClient locale={locale}>{children}</I18nProviderClient>
+        {children}
       </body>
     </html>
   )
